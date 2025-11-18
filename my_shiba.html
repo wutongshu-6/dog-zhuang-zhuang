@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- 告诉浏览器：这是一个HTML5文件 -->
+<html lang="zh-CN">
+<!-- HTML页面的根标签，所有内容都要包在里面；lang="zh-CN"表示页面是中文 -->
+<head>
+    <!-- 头部：放页面的“配置信息”，比如标题（浏览器标签上显示的），不显示在页面内容里 -->
+    <meta charset="UTF-8">
+    <!-- 关键：解决中文乱码问题，必须加 -->
+    <title>柴犬壮壮专属小站</title>
+    <!-- 浏览器标签上显示的标题，把XXX改成你家柴犬的名字，比如“我的柴犬豆包专属小站” -->
+</head>
+
+<style>
+    /* 导航栏样式：自己改background-color为你喜欢的颜色（比如#ffd700金色） */
+    .nav {
+        background-color: #ecc310; /* 柴犬浅棕色，自己换 */
+        padding: 15px; /* 上下内边距，不用改 */
+        text-align: center; /* 按钮居中，不用改 */
+        box-shadow: 0 2px 5px #ccc; /* 轻微阴影，不用改 */
+    }
+    .nav a {
+        margin: 0 40px; /* 按钮之间的间距，不用改 */
+        text-decoration: none; /* 去掉下划线，不用改 */
+        color: #fcfcfc; /* 文字颜色，不用改 */
+        font-weight: bold; /* 加粗，不用改 */
+    }
+    /* 鼠标移上去变色：自己改color为深一点的颜色（比如#e67e22） */
+    .nav a:hover {
+        color: #e67e22;
+    }
+</style>
+
+<body>
+<!-- 导航栏：自己写3个a标签，对应3个页面 -->
+<div class="nav">
+    <a href="#" onclick="showPage('intro')">Pokemon介绍</a>
+    <a href="#" onclick="showPage('photos')">帅照合集</a>
+    <a href="#" onclick="showPage('skills')">合作伙伴</a>
+</div>
+    <!-- 身体：所有要显示在页面上的内容（照片、文字、列表），都放在这里面，这是咱们重点写的部分 -->
+    <!-- 1. 主标题：用<h1>，页面最大的标题，放柴犬的大名 -->
+        
+<h1>我家柴犬：徐小壮</h1>
+
+<!-- 2. 副标题：用<h2>，比h1小，放柴犬的昵称 -->
+<h2>小昵称：壮壮</h2>
+
+<!-- 3. 小标题：用<h3>，更小，引出下面的介绍 -->
+<h3>关于小柴的小介绍～</h3>
+    <!-- 下面的内容，咱们一步步往body里加，先空着 -->
+
+</body>
+</html>
