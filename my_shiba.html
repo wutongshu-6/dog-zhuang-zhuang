@@ -28,6 +28,14 @@
     .nav a:hover {
         color: #e67e22;
     }
+    /* 精灵球标志定位样式 */
+    .pokemon-logo {
+        position: fixed; /* 固定在页面上，滚动时不移动 */
+        top: 10px; /* 距离页面顶部20像素（可改，比如30px） */
+        left: 20px; /* 距离页面右侧20像素（可改） */
+        width: 50px; /* 标志大小（可改，比如80px更大） */
+        z-index: 100; /* 确保在其他内容上方显示，不被遮挡 */
+    }
 </style>
 
 <body>
@@ -36,10 +44,25 @@
     <a href="#" onclick="showPage('intro')">Pokemon介绍</a>
     <a href="#" onclick="showPage('photos')">帅照合集</a>
     <a href="#" onclick="showPage('skills')">合作伙伴</a>
+        <!-- 2. 帅照合集页面（id=photos） -->
+
+    <div class="page" id="photos">
+    <h1>壮壮帅照合集 📸</h1>
+    <p>鼠标移到照片上会放大哦～</p>
+    <!-- 照片列表：放在photo-list里，自动有放大动画 -->
+    <div class="photo-list">
+        <!-- 替换成你“壮壮照片”文件夹里的实际文件名 -->
+        <img src="D:\小项目\壮壮网页\壮壮照片\帅照1.jpg" alt="壮壮正面帅照" width="300">
+        
+        <!-- 想加更多照片，就多复制一行，改文件名即可 -->
+    
+</div>
 </div>
     <!-- 身体：所有要显示在页面上的内容（照片、文字、列表），都放在这里面，这是咱们重点写的部分 -->
     <!-- 1. 主标题：用<h1>，页面最大的标题，放柴犬的大名 -->
-        
+    <!-- 宝可梦精灵球标志：用透明背景的PNG -->
+    <img src="精灵球-png.png" alt="宝可梦精灵球标志" class="pokemon-logo">
+       
 <h1>我家柴犬：徐小壮</h1>
 
 <!-- 2. 副标题：用<h2>，比h1小，放柴犬的昵称 -->
